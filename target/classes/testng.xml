@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Functional" parallel="tests" thread-count="150">
+	<listeners>
+		<listener class-name="com.qa.ExtentReportListener.ExtentReporterNG" />
+	</listeners>
+	<test name="Functional">
+				
+		<!--packages>
+			<package name="biz.neustar.nsp.automation.common.*" />
+      		<package name="biz.neustar.nsp.automation.tests.ui.*" />
+     	</packages-->
+   		<classes>
+	   		<class name="com.crm.qa.testcases.ContactPageTest" />
+	   		<class name="com.crm.qa.testcases.HomePageTest" />
+	   		<class name="com.crm.qa.testcases.LoginPageTest" />
+	   	</classes>
+	</test>
+</suite> <!-- Suite -->
